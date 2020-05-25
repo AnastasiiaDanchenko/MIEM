@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100">
+
+    <ImageView
+        android:id="@+id/back_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/letters"
+        android:scaleType="fitXY"/>
+
+    <Button
+        android:id="@+id/pause_button"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="||"
+        android:background="@drawable/gradient"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <ImageButton
+        android:id="@+id/etazh5a_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:src="@drawable/strelka"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"/>
+
+    <ImageButton
+        android:id="@+id/lestnitsa_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:src="@drawable/strelka"
+        android:scaleType="fitXY"
+        android:rotation="180"
+        android:background="@android:color/transparent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageButton
+        android:id="@+id/atrium_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:src="@drawable/strelka"
+        android:scaleType="fitXY"
+        android:rotation="270"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

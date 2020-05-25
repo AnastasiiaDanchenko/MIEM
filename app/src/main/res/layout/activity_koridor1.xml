@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100">
+
+    <ImageView
+        android:id="@+id/back_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/koridor1"
+        android:scaleType="fitXY"/>
+
+    <ImageButton
+        android:id="@+id/bufet_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:src="@drawable/strelka"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="250dp"
+        android:rotation="180"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageButton
+        android:id="@+id/biblio_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:src="@drawable/strelka"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="50dp"
+        android:rotation="180"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageButton
+        android:id="@+id/lift_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:src="@drawable/strelka"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="15dp"/>
+
+    <ImageButton
+        android:id="@+id/atrium_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:src="@drawable/strelka"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="15dp"/>
+
+    <ImageButton
+        android:id="@+id/koridor_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:rotation="90"
+        android:src="@drawable/strelka"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

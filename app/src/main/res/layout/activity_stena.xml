@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/stena"
+        android:scaleType="fitXY"/>
+
+    <ImageButton
+        android:id="@+id/komnata_ot_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:src="@drawable/strelka"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_centerHorizontal="true"
+        android:rotation="90"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/kalendar_button"
+        android:layout_width="150dp"
+        android:layout_height="270dp"
+        android:background="@android:color/transparent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

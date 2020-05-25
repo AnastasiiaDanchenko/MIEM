@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/kalendar"
+        android:scaleType="fitXY"/>
+
+    <ImageButton
+        android:id="@+id/stena_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:src="@drawable/strelka"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_centerVertical="true"
+        android:rotation="180"
+        android:layout_marginLeft="15dp"/>
+
+    <Button
+        android:id="@+id/movement_button"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/biblioteka"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99FFFFFF"
+        android:layout_margin="30dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical"
+        android:weightSum="20">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="Научно-учебная лаборатория телекоммуникационных систем"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#00003d"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingBottom="15dp"
+            android:text="@string/lab3"
+            android:textColor="#000000"
+            android:textSize="12.5sp"
+            android:textStyle="bold"
+            android:layout_weight="17"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/biblio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:background="@drawable/gradient"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="25dp"/>
+
+</FrameLayout>

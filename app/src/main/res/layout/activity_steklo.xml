@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/steklo"
+        android:scaleType="fitXY"/>
+
+    <ImageButton
+        android:id="@+id/safe_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:src="@drawable/strelka"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:rotation="90"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="80dp"/>
+
+    <ImageButton
+        android:id="@+id/komnata_k_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:src="@drawable/strelka"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"/>
+
+</RelativeLayout>

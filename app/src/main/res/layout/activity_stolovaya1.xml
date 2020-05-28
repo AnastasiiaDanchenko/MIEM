@@ -46,12 +46,35 @@
         android:layout_centerVertical="true"
         android:layout_marginRight="15dp"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="10"
+        android:orientation="horizontal">
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"/>
+
     <Button
         android:id="@+id/numbers_button"
-        android:layout_width="40dp"
-        android:layout_height="70dp"
-        android:background="@android:color/transparent"
-        android:layout_marginLeft="450dp"
-        android:layout_marginTop="40dp"/>
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" />
+    </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>

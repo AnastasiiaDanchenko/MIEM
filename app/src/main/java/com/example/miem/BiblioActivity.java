@@ -6,9 +6,11 @@ import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -30,6 +32,12 @@ public class BiblioActivity extends AppCompatActivity {
         lab3Button = findViewById(R.id.lab3_button);
         koridorButton = findViewById(R.id.koridor_button);
         pauseButton = findViewById(R.id.pause_button);
+
+        if(level<9){
+            Toast toast = Toast.makeText(getApplicationContext(), "Самое интересное всегда прячут на дальних полках.", Toast.LENGTH_LONG);
+            toast.setGravity(Gravity.CENTER, 0, 0);
+            toast.show();
+        }
 
         pauseButton.setOnClickListener(new View.OnClickListener() {
             @Override

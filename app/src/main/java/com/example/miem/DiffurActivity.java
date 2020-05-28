@@ -35,7 +35,7 @@ public class DiffurActivity extends AppCompatActivity {
             public void onClick(View v) {
                 EditText editText = findViewById(R.id.otvet_text);
                 otvetText = editText.getText().toString();
-                if (otvetText.equals("(1/6,1/6)")){
+                if (otvetText.equals("(1/6,1/6)") || otvetText.equals("(1/6,1/6) ") || otvetText.equals("(1/6, 1/6)") || otvetText.equals("(1/6, 1/6) ") ){
 
                     SharedPreferences s_level = getSharedPreferences("levelSettings", MODE_PRIVATE);
                     int level = s_level.getInt("LEVEL", 1);

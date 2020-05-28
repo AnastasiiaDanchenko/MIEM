@@ -17,17 +17,10 @@
         android:weightSum="20"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_weight="5"
+        <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:paddingLeft="40dp"
-            android:paddingRight="40dp"
-            android:text="@string/task"
-            android:textColor="#000000"
-            android:gravity="center"
-            android:textSize="22sp"
-            android:textStyle="bold"/>
+            android:layout_weight="1"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,7 +37,9 @@
                 android:layout_margin="5dp"
                 android:layout_height="match_parent"
                 android:layout_width="0dp"
-                android:ems="10"/>
+                android:inputType="number"
+                android:maxLength="1"
+                android:ems="1"/>
             <EditText
                 android:background="#FFFFFF"
                 android:id="@+id/text2"
@@ -52,12 +47,16 @@
                 android:layout_margin="5dp"
                 android:layout_height="match_parent"
                 android:layout_width="0dp"
-                android:ems="10"/>
+                android:inputType="number"
+                android:maxLength="1"
+                android:ems="1"/>
             <EditText
                 android:background="#FFFFFF"
                 android:id="@+id/text3"
                 android:layout_weight="1"
                 android:layout_margin="5dp"
+                android:inputType="number"
+                android:maxLength="1"
                 android:layout_height="match_parent"
                 android:layout_width="0dp"
                 android:ems="10"/>
@@ -75,9 +74,11 @@
                 android:id="@+id/text4"
                 android:layout_weight="4"
                 android:layout_margin="5dp"
+                android:inputType="number"
+                android:maxLength="1"
                 android:layout_height="match_parent"
                 android:layout_width="0dp"
-                android:ems="10"/>
+                android:ems="1"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -94,7 +95,9 @@
                 android:layout_margin="5dp"
                 android:layout_height="match_parent"
                 android:layout_width="0dp"
-                android:ems="10"/>
+                android:inputType="number"
+                android:maxLength="1"
+                android:ems="1"/>
             <EditText
                 android:background="#FFFFFF"
                 android:id="@+id/text6"
@@ -102,15 +105,19 @@
                 android:layout_margin="5dp"
                 android:layout_height="match_parent"
                 android:layout_width="0dp"
-                android:ems="10"/>
+                android:inputType="number"
+                android:maxLength="1"
+                android:ems="1"/>
             <EditText
                 android:background="#FFFFFF"
                 android:id="@+id/text7"
                 android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="1"
                 android:layout_margin="5dp"
                 android:layout_height="match_parent"
                 android:layout_width="0dp"
-                android:ems="10"/>
+                android:ems="1"/>
         </LinearLayout>
 
         <Button

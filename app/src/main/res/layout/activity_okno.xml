@@ -46,12 +46,34 @@
         android:layout_marginBottom="50dp"
         android:layout_marginLeft="15dp"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:weightSum="10"
+        android:orientation="horizontal">
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4.5"/>
     <Button
         android:id="@+id/zaliv_button"
-        android:layout_width="250dp"
-        android:layout_height="150dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
         android:background="@android:color/transparent"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="280dp"/>
+        android:layout_weight="3"/>
+    </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>

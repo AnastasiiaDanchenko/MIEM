@@ -35,7 +35,11 @@ public class CodActivity extends AppCompatActivity {
             public void onClick(View v) {
                 EditText editText = findViewById(R.id.otvet_text);
                 otvetText = editText.getText().toString();
-                if (otvetText.equals("while (it != std::cend(v) && ix++ < 3) print_elem(*it);")){
+                if (otvetText.equals("while (it != std::cend(v) && ix++ < 3) print_elem(*it);") ||
+                        otvetText.equals("while (it != std::cend(v) && ix++ < 3){ print_elem(*it);") ||
+                        otvetText.equals("while(it != std::cend(v) && ix++ < 3){ print_elem(*it);") ||
+                        otvetText.equals("while (it != std::cend(v) && ix++ < 3){ print elem(*it);") ||
+                        otvetText.equals("while(it != std::cend(v) && ix++ < 3){ print elem(*it);")){
 
                     SharedPreferences s_level = getSharedPreferences("levelSettings", MODE_PRIVATE);
                     int level = s_level.getInt("LEVEL", 1);

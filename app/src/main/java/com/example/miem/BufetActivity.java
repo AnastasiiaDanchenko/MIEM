@@ -5,9 +5,11 @@ import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -25,6 +27,12 @@ public class BufetActivity extends AppCompatActivity {
 
         facesButton = findViewById(R.id.faces_button);
         koridorButton = findViewById(R.id.koridor_button);
+
+        if(bufet == 0){
+            Toast toast = Toast.makeText(getApplicationContext(), "А тут вкусно кормят", Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.CENTER, 0, 0);
+            toast.show();
+        }
 
         facesButton.setOnClickListener(new View.OnClickListener() {
             @Override

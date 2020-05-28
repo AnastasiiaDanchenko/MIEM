@@ -34,9 +34,12 @@ public class OknoActivity extends AppCompatActivity {
         final int level = s_level.getInt("LEVEL", 1);
 
         if(level<3){
-            Toast toast = Toast.makeText(getApplicationContext(), "Хм, а тут красиво. Может быть, можно узнать что-то интересное про этот залив?", Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(getApplicationContext(), "Хм, а тут красиво.", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER, 0, 0);
             toast.show();
+            Toast toast1 = Toast.makeText(getApplicationContext(), "Может быть, можно узнать что-то интересное про этот залив?", Toast.LENGTH_LONG);
+            toast1.setGravity(Gravity.CENTER, 0, 0);
+            toast1.show();
         }
 
         backImage = findViewById(R.id.back_image);

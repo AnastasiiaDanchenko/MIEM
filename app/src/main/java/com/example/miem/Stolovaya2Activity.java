@@ -37,6 +37,12 @@ public class Stolovaya2Activity extends AppCompatActivity {
         backImage = findViewById(R.id.back_image);
         pauseButton = findViewById(R.id.pause_button);
 
+        if(level<8){
+            Toast toast = Toast.makeText(getApplicationContext(), "Какая странная надпись.", Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.CENTER, 0, 0);
+            toast.show();
+        }
+
         pauseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

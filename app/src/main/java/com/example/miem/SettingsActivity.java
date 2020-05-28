@@ -36,7 +36,7 @@ public class SettingsActivity extends AppCompatActivity {
         sbrosButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(), "Вы уверены, что хотите сбросить прогресс? Если да, нажмите 'Подтвердить'", Toast.LENGTH_LONG);
+                Toast toast = Toast.makeText(getApplicationContext(), "Подтвердите сброс прогресса.", Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.CENTER, 0, 0);
                 toast.show();
                 enterButton.setVisibility(View.VISIBLE);
@@ -46,7 +46,7 @@ public class SettingsActivity extends AppCompatActivity {
         enterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(), "Прогресс сброшен", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), "Прогресс сброшен.", Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.CENTER, 0, 0);
                 toast.show();
                 SharedPreferences s_level = getSharedPreferences("levelSettings", MODE_PRIVATE);

@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         stopService(new Intent(this, MyMusic.class));
+        finish();
     }
 
     @Override
